@@ -41,5 +41,5 @@ nix flake init -t github:aneeqasif/nix-jar/#basic
 Basic shell.nix file with python and venv shell hook support
 
 ```bash
-nice flake init -t github:aneeqasif/nix-jar/#pyshell
+nix flake init -t github:aneeqasif/nix-jar/#pyshell
 ```
