@@ -62,7 +62,7 @@
               # https://devenv.sh/pre-commit-hooks/
               pre-commit.hooks = {
                 black.enable = true;
-                nixfmt.enable = true;
+                nixfmt-rfc-style.enable = true;
                 editorconfig-checker.enable = true;
               };
 
