@@ -3,7 +3,7 @@
 
   outputs = { self }: {
     templates = {
-      pydevnev = {
+      pydev = {
         path = ./pydevenv;
         description = "Python development environment using devenv and flakes";
       };
@@ -28,6 +28,6 @@
     };
 
     # Set a default template (optional)
-    defaultTemplate = self.templates.basic;
+    defaultTemplate = self.templates.pydev;
   };
 }
