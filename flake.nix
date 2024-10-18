@@ -3,14 +3,14 @@
 
   outputs = { self }: {
     templates = {
-      devenvPyflake = {
-        path = ./devenv-pyflake;
+      pydevnev = {
+        path = ./pydevenv;
         description = "Python development environment using devenv and flakes";
       };
 
       # Template for pyflake
       pyflake = {
-        path = ./pyflake;
+        path = ./python;
         description = "Basic Python project template with flake support";
       };
 
