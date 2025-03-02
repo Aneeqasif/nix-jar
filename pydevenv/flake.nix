@@ -20,6 +20,7 @@
     in {
       packages = forEachSystem (system: {
         devenv-up = self.devShells.${system}.default.config.procfileScript;
+        devenv-test = self.devShells.${system}.default.config.test;
       });
 
       devShells = forEachSystem (system:
@@ -62,7 +63,7 @@
               # https://devenv.sh/pre-commit-hooks/
               pre-commit.hooks = {
                 black.enable = true;
-                nixfmt-rfc-style.enable = true;
+                nixfmt.enable = true;
                 editorconfig-checker.enable = true;
               };
 

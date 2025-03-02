@@ -9,14 +9,16 @@ mkShell {
     python3Packages.venvShellHook # autosetup venv
 
     #................. Python Packages here
-    (python3.withPackages (p:
-      with p;
-      [
-        pip
-        # black
-      ]))
+    # (python3.withPackages (p:
+    #   with p;
+    #   [
+    #     pip
+    #     # black
+    #   ]))
 
   ];
+ 
+  #.................
 
   venvDir = "./.venv";
   postVenvCreation = ''

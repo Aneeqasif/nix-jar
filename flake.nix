@@ -14,6 +14,12 @@
         description = "Basic Python project template with flake support";
       };
 
+      # Template for pyflake
+      uvdev = {
+        path = ./uvdev;
+        description = "devenv environment with uv";
+      };
+
       # Template basic
       basic = {
         path = ./basic;
